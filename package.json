@@ -1,5 +1,5 @@
 {
-  "name": "huma-apps-monorepo",
+  "name": "huma-js-monorepo",
   "private": true,
   "workspaces": {
     "packages": [
