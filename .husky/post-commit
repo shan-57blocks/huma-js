@@ -9,6 +9,6 @@ cd $SUPERPROJECT_WORKING_TREE
 # From https://stackoverflow.com/questions/69275415/why-is-git-describe-picking-out-the-tag-that-it-does/75228688#75228688
 unset $(git rev-parse --local-env-vars)
 
-git add .
+git add src/huma-js
 git commit -m "Update submodule huma-js"
 git push
