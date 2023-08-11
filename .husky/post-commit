@@ -4,9 +4,6 @@
 branch="$(git rev-parse --abbrev-ref HEAD)"
 
 if [ "$branch" = "develop" ]; then
-  echo "$PWD"
-  cd ..
-  echo "$PWD"
   cd ..
   echo "$PWD"
   git submodule update --remote
