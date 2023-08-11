@@ -25,6 +25,11 @@
     "lint:widget": "yarn workspace @huma-finance/widgets lint",
     "lint:all": "yarn lint:shared && yarn lint:sdk && yarn lint:widget"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
+  },
   "devDependencies": {
     "husky": "^8.0.3",
     "lerna": "^6.6.1"
