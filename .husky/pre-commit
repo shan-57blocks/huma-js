@@ -1,12 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-branch="$(git rev-parse --abbrev-ref HEAD)"
-
-if [ "$branch" = "develop" ]; then
-  cd ..
-  git submodule update --remote
-  git add .
-  git commit -m "Update submodule huma-js"
-  git push
-fi
+git add . && yarn workspaces run lint-staged
