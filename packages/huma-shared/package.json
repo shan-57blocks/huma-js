@@ -1,12 +1,17 @@
 {
   "name": "@huma-finance/shared",
   "version": "0.0.36",
-  "types": "./dist/index.d.ts",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/index.js",
+  "types": "./src/index.ts",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "types": "./dist/index.d.ts",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/index.js"
+  },
   "scripts": {
     "start": "tsc -w --project ./tsconfig.build.json",
     "postbuild": "copyfiles -u 1 ./src/components/icons/*.svg dist",
