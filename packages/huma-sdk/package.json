@@ -1,14 +1,19 @@
 {
   "name": "@huma-finance/sdk",
   "version": "0.0.36",
-  "types": "./dist/index.d.ts",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/index.js",
+  "types": "./src/index.ts",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
   "files": [
     "dist",
     "getting-started.md",
     "API.md"
   ],
+  "publishConfig": {
+    "types": "./dist/index.d.ts",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/index.js"
+  },
   "scripts": {
     "start": "tsc -w",
     "graphql": "graphql-codegen",
